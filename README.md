@@ -147,11 +147,4 @@ Then choose:
 1 → Basic Agent  
 2 → Chain-of-Thought Agent  
 3 → Advanced Agent  
-```
-
----
-
-## Notes
-
-- Make sure to replace `.env` values with your own API keys before running.  
-- Do NOT upload real API keys to GitHub.  
+``` 
