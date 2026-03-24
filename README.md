@@ -138,13 +138,54 @@ Example of a structured response produced by the Advanced Agent:
 
 ## How to Run
 
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/CSAI422_Assignment3.git
+cd CSAI422_Assignment3
+```
+
+### 2. Install dependencies
+```bash
+pip install openai python-dotenv requests
+```
+
+### 3. Create an environment file
+Create a `.env` file in the project folder (you can copy from `.env.example` if available):
+
+```bash
+cp .env.example .env
+```
+
+Then open `.env` and add your API keys:
+
+```env
+API_KEY=your_api_key_here
+BASE_URL=https://api.groq.com/openai/v1
+LLM_MODEL=llama-3.1-8b-instant
+WEATHER_API_KEY=your_weather_api_key_here
+```
+
+### 4. Run the program
 ```bash
 python3 conversational_agent.py
 ```
 
-Then choose:
+### 5. Choose an agent type
+When prompted, select:
+
 ```
 1 → Basic Agent  
 2 → Chain-of-Thought Agent  
-3 → Advanced Agent  
-``` 
+3 → Advanced Agent
+```
+
+### 6. Start interacting
+
+You can now ask questions like:
+
+- "What is the weather in Cairo?"
+- "What is the temperature difference between Cairo and London?"
+- "Compare the weather in Cairo, Riyadh, and London"
+- "What is the average maximum temperature in Cairo over the next 3 days?"
+
+Type `exit` to end the conversation.
